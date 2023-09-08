@@ -1,0 +1,11 @@
+Fri 08 Sep 2023 10:11:16 PM UTC: 
+ hashmap.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:56:13: error: unused variable ‘map’ [-Werror=unused-variable]
+   56 |   HashMap * map = (HashMap *) malloc(capacity*sizeof(HashMap));
+      |             ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+4829d33
