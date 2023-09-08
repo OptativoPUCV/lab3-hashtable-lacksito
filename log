@@ -90,3 +90,18 @@ hashmap.c:42:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 c338d2c
+Fri 08 Sep 2023 10:58:43 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:49:15: error: expected expression before ‘:’ token
+   49 |         return:
+      |               ^
+hashmap.c:49:15: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+hashmap.c:42:6: note: declared here
+   42 | void insertMap(HashMap * map, char * key, void * value)
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+01934a7
