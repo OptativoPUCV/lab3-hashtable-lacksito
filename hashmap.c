@@ -74,9 +74,14 @@ HashMap * createMap(long capacity)
     return map;
 }
 
-void eraseMap(HashMap * map,  char * key) {    
-
-
+void eraseMap(HashMap * map,  char * key) 
+{
+   Pair *pairEliminar = searchMap(map, key);
+   if (pairEliminar != NULL)
+   {
+     pairEliminar->key = NULL;
+     map->size--;
+   }
 }
 
 Pair * searchMap(HashMap * map,  char * key) 
