@@ -52,7 +52,7 @@ void insertMap(HashMap * map, char * key, void * value)
   }
   map ->buckets[i] = createPair(strdup(key), value);
   map ->size++; 
-  map->current = i:
+  map->current = i;
 }
 
 void enlarge(HashMap * map) {
