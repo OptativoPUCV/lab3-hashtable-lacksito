@@ -15,3 +15,14 @@ Fri 08 Sep 2023 10:26:38 PM UTC:
  tests:  0|6
 total_score: 0/70
 24542ed
+Fri 08 Sep 2023 10:35:34 PM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+test.c: In function ‘createMap’:
+hashmap.c:58:17: error: ‘*map.capacity’ is used uninitialized [-Werror=uninitialized]
+   58 |   map->capacity *= capacity;
+      |                 ^~
+cc1: all warnings being treated as errors
+Compilation failed
+47133b1
