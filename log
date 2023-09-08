@@ -26,3 +26,9 @@ hashmap.c:58:17: error: ‘*map.capacity’ is used uninitialized [-Werror=unini
 cc1: all warnings being treated as errors
 Compilation failed
 47133b1
+Fri 08 Sep 2023 10:35:45 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+642d496
